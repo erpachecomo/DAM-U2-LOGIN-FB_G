@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card>
+      <ion-card-content>
+      <img [src]="user.picture">
+           <ion-card-title>
+              {{user.name}}
+          </ion-card-title>
+          <p>
+              {{user.gender}}
+          </p>
+          <p>
+            {{user.picture}}
+          </p>
+      </ion-card-content>
+  </ion-card>
+    <button ion-button (click)="doFbLogout()" default large>Facebook Logout</button>
+    <button ion-button (click)="doGoogleLogout()" default large>Google Logout</button>
+</ion-content>
